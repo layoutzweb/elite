@@ -6,6 +6,12 @@ import Helmet from 'react-helmet'
 import Ratings from "../components/index/ratings"
 import ChangeGalaxy from "../components/index/change-galaxy"
 import PlayYourWay from "../components/index/play-your-way"
+import Powerplay from "../components/index/powerplay"
+import Cqc from "../components/index/cqc"
+import Horizons from "../components/index/horizons"
+import Community from "../components/index/community"
+import PcRequirements from "../components/index/pc-requirements"
+import DiscordFullBar from "../components/discord-full-bar"
 
 export default class Index extends React.Component {
   render() {
@@ -23,6 +29,12 @@ export default class Index extends React.Component {
         <Ratings />
         <ChangeGalaxy />
         <PlayYourWay />
+        <Powerplay />
+        <Cqc />
+        <Horizons />
+        <Community />
+        <PcRequirements />
+        <DiscordFullBar />
       </div>
     )
   }
