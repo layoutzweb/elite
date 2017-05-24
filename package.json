@@ -5,8 +5,11 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "gatsby": "^0.12.45",
+    "immutable": "^3.8.1",
     "object-assign": "^4.1.1",
     "react-helmet": "^5.0.3",
+    "react-mdl": "^1.10.3",
+    "react-mdl-extra": "^1.4.3",
     "react-typography": "^0.15.0",
     "typography": "^0.15.8",
     "typography-breakpoint-constants": "^0.14.0",

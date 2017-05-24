@@ -5,7 +5,10 @@ import Helmet from "react-helmet"
 import { config } from "config"
 import { rhythm } from "../utils/typography"
 
-import Header from "components/header" 
+import Header from "components/header"
+
+import '../node_modules/react-mdl/extra/material.js';
+import '../node_modules/react-mdl/extra/material.css';
 
 module.exports = React.createClass({
   propTypes() {

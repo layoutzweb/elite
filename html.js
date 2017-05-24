@@ -38,6 +38,9 @@ module.exports = React.createClass({
           />
           {head.title.toComponent()}
           {head.meta.toComponent()}
+          <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+          <script src="https://unpkg.com/dialog-polyfill/dialog-polyfill.js"></script>
+          <link rel="stylesheet" type="text/css" href="https://unpkg.com/dialog-polyfill/dialog-polyfill.css" />
           <TypographyStyle typography={typography} />
           {css}
         </head>
