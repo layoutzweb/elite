@@ -12,6 +12,7 @@ import Horizons from "../components/index/horizons"
 import Community from "../components/index/community"
 import PcRequirements from "../components/index/pc-requirements"
 import DiscordFullBar from "../components/discord-full-bar"
+import Footer from "../components/footer"
 
 export default class Index extends React.Component {
   render() {
@@ -34,7 +35,8 @@ export default class Index extends React.Component {
         <Horizons />
         <Community />
         <PcRequirements />
-        <DiscordFullBar />
+        <DiscordFullBar />  
+        <Footer />
       </div>
     )
   }

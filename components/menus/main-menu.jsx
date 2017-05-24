@@ -7,15 +7,8 @@ export default class MainMenu extends React.Component {
   render() {
     return (
       <div>
-        
+        Menu
       </div>
     )
   }
 }
-
-
-<div>
-<div>
-
-</div>
-</div>

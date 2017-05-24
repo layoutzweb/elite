@@ -1,18 +1,14 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-
+import PropTypes from 'prop-types'
 import { prefixLink } from 'gatsby-helpers'
 import { TypographyStyle } from 'react-typography'
 import typography from './utils/typography'
+import { Layout } from 'react-mdl/lib/Layout'  
 
 const BUILD_TIME = new Date().getTime()
 
-module.exports = React.createClass({
-  propTypes() {
-    return {
-      body: React.PropTypes.string,
-    }
-  },
+export default class Html extends React.Component {
   render() {
     const head = Helmet.rewind()
 
@@ -45,13 +41,16 @@ module.exports = React.createClass({
           {css}
         </head>
         <body>
-          <div
-            id="react-mount"
-            dangerouslySetInnerHTML={{ __html: this.props.body }}
-          />
+          <Layout>
+            <div id="react-mount" dangerouslySetInnerHTML={{ __html: this.props.body }}/>
+          </Layout>
           <script src={prefixLink(`/bundle.js?t=${BUILD_TIME}`)} />
         </body>
       </html>
     )
-  },
-})
+  }
+}
+
+Html.propTypes = {
+  body: PropTypes.string
+}
